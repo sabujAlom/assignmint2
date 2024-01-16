@@ -208,22 +208,26 @@ background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 
 /* -------------------section4---------------------- */
 .section4{
-
+    margin: 100px 0;
 }
 .section4 .section4-row1{
-
+    text-align: center;
 }
 .section4 .section4-row2{
     display: flex;
+    justify-content: ;
 }
 .section4 .section4-row3{
-
+    text-align: center; 
+}
+.section5{
+    text-align: center;
 }
 
 
 /* .section6--------------------------- */
 .section6{
-
+    
 }
 .section6 .section6-row1{
     background-image: url("../Images/Group 39.png");
@@ -243,6 +247,28 @@ background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     height: 31.25rem;
      background-repeat: no-repeat;
 }
+/* -------------footer------------------ */
+footer{
+    text-align: center;
+    width: 100%;
+    height: 31.5rem;
+    background: rgba(19, 19, 24, 0.05);
+    
+
+}
+.footer-container{
+    padding: 6.875rem 21rem;
+}
+
+.logofooter{
+    display: inline;
+    align-items: center;
+    margin:0 auto;
+    
+}
+.copyright{
+    padding-top: 45px;
+}
 
 
 
@@ -256,4 +282,5 @@ background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     
     }
 }
+
 
