@@ -16,7 +16,7 @@
     --text-light:;
     --extra-light;;
     --white-color:#FFF;
-    --max-width:1200px;
+    --blac-dimond: #131318;
 }
 
 /*--------------------- header area----------------------------- */
@@ -25,7 +25,9 @@
 
 }
 /* -----------nav------------ */
+
 nav{
+    align-items: center;
     display: flex;
     justify-content: space-between;
 }
@@ -46,8 +48,15 @@ nav{
 .life{
     color: var(--secondary-color);
 }
+.banner-content{
+    margin: 0 auto;
+    align-items: centen;
+}
 nav ul{
-    display: flex;
+    
+    display:flex;
+    margin:50px;
+    text-align: center;
     
 }
 nav ul li{
@@ -66,67 +75,135 @@ nav ul li a{
 .banner-container{
     background-image: url("../Images/Group 13 (1) (1).png");
     width: 100%;
-    height: 31.25rem;
     background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
 
 }
 .banner-container .banner-content{
-    text-align: center;
+    text-align:center;
+    padding: 5rem 11.563rem;
 }
 .banner-container .banner-content > h1{
-color: var(--white-color);
-font-size: 4rem;
-font-weight: 800;
+    color: var(--white-color);
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
 }
 .banner-container .banner-content > p{
-    color: #FFF;
-
-
-font-family: Mulish;
-font-size: 1rem;
-font-weight: 400;
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
 }
 
 .banner-container .banner-content ul {
     display: flex;
+    /* margin:0 auto; */
    
 
    
 }
 .banner-container .banner-content ul li{
     list-style: none;
-    margin: 20px;
-    position: relative;
+    margin: 2px;
     text-align: center;
-    
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
 
     
 
 }
-.banner-container .banner-content ul li a{
-    
-    text-decoration: none;
-    color: rgba(19, 19, 24, 0.50);
-    
-    font-size: 16px;
+.banner-container .banner-content ul li input{
+
+    width: 10.875rem;
+    height: 3.25rem;
+    border-radius: .6rem;
+    background: var(--white-color);
+    border: none;
+}
+.orange{
+    background: #FF5400;
+    padding-left: 30px;
+}
+
+/* -------------------main area----------------------- */
+main{
+    margin: 6.25rem 8.438rem;
+}
+
+.section1{
+    display: flex;
+
+}
+.section1 .section1-left{
+
+}
+.section1-left h1{
+    color: var(--blac-dimond);
+    text-align: cente
+    font-size: 40px;
+    font-weight: 800;
+
+
+}
+p{
+    padding: 24px 0;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+.section1-left ul li{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
     font-weight: 400;
 }
+.red-more{
+    background-color: var(--secondary-color);
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    border: none;
+    margin: 2rem;
+    color: var(--white-color);
+
+}
+.section1-right{
+width: 100%;
+height: auto;
+border-radius: 16px;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+/* 
+.section2---------------------------- */
+.section2{
+    margin: 100px 0 48px 0;
+    text-align: center;
+    
+}
+
 /* .section3 area-------------------- */
 .section3{
     display: grid;
+    gap: 1.5rem;
     align-items: center;
 }
 .section3 .row1{
     display: flex;
     width: 100%;
+    gap: 1.5rem;
+    
 }
 .section3 .row2{
     display: flex;
     width: 100%;
+    gap: 1.5rem;
 }
 .section3 .row3{
     display: flex;
     width: 100%;
+    gap: 1.5rem;
 }
 
 /* -------------------section4---------------------- */
@@ -164,7 +241,19 @@ font-weight: 400;
     background-image: url("../Images/Group 39.png");
     width: 100%;
     height: 31.25rem;
-    background-repeat: no-repeat;
+     background-repeat: no-repeat;
 }
 
+
+
+/* responsive media queries */
+@media screen and (max-width: 800px;){
+    nav{
+        flex-direction: column;
+    }
+    .header{
+        margin:10px;
+    
+    }
+}
 
